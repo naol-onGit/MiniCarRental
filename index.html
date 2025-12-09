@@ -27,7 +27,7 @@
           <li><a href="#gallery">Our Fleet</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#booking" class="btn" style="padding: 8px 20px; font-size: 0.9rem">Book Now</a></li>
+          <!-- <li><a href="#booking" class="btn" style="padding: 8px 20px; font-size: 0.9rem">Book Now</a></li> -->
         </ul>
       </nav>
     </div>
@@ -54,7 +54,7 @@
         <!-- Car 1 -->
         <div class="car-card">
           <div class="car-image">
-            <img src="images/rolls_royce.png" alt="Vintage Rolls Royce" />
+            <img src="images/photo_2025-12-09_15-37-16.jpg" alt="Vintage Rolls Royce" />
           </div>
           <div class="car-details">
             <h3 class="car-title">Vintage Rolls Royce</h3>
@@ -65,14 +65,14 @@
               <span>❄️ A/C</span>
               <span>🍾 Champagne</span>
             </div>
-            <button class="btn" onclick="selectCar('Vintage Rolls Royce')">Select This Car</button>
+            <!-- <button class="btn" onclick="selectCar('Vintage Rolls Royce')">Select This Car</button> -->
           </div>
         </div>
 
         <!-- Car 2 -->
         <div class="car-card">
           <div class="car-image">
-            <img src="images/mini_cooper.png" alt="Classic Mini Cooper" />
+            <img src="images/photo_2025-12-09_15-36-37.jpg" alt="Classic Mini Cooper" />
           </div>
           <div class="car-details">
             <h3 class="car-title">Classic Mini Cooper</h3>
@@ -82,24 +82,87 @@
               <span>🎵 Sound System</span>
               <span>🎀 Ribbons</span>
             </div>
-            <button class="btn" onclick="selectCar('Classic Mini Cooper')">Select This Car</button>
+            <!-- <button class="btn" onclick="selectCar('Classic Mini Cooper')">Select This Car</button> -->
           </div>
         </div>
 
         <!-- Car 3 placeholder -->
         <div class="car-card">
           <div class="car-image">
-            <img src="images/rolls_royce.png" style="filter: grayscale(100%)" alt="More Coming Soon" />
+            <img src="images/photo_2025-12-09_15-37-22.jpg" alt="Classic Beauty" />
           </div>
           <div class="car-details">
-            <h3 class="car-title">More Arriving Soon</h3>
-            <p class="car-desc">We are constantly expanding our fleet to offer you more choices for your big day.</p>
+            <h3 class="car-title">Classic Beauty</h3>
+            <p class="car-desc">A timeless choice for your special occasion, offering elegance and grace.</p>
             <div class="car-features">
-              <span>Luxury</span>
-              <span>Vintage</span>
+              <span>Classic</span>
+              <span>Elegant</span>
               <span>Style</span>
             </div>
-            <button class="btn" disabled style="opacity: 0.5; cursor: not-allowed">Coming Soon</button>
+          </div>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="car-card">
+          <div class="car-image">
+            <img src="images/photo_2025-12-09_15-37-08.jpg" alt="Vintage Comfort" />
+          </div>
+          <div class="car-details">
+            <h3 class="car-title">Vintage Comfort</h3>
+            <p class="car-desc">Experience the comfort of a bygone era with this beautifully preserved vehicle.</p>
+            <div class="car-features">
+              <span>Vintage</span>
+              <span>Cozy</span>
+              <span>Unique</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 5 -->
+        <div class="car-card">
+          <div class="car-image">
+            <img src="images/photo_2025-12-09_15-37-28.jpg" alt="Elegant Ride" />
+          </div>
+          <div class="car-details">
+            <h3 class="car-title">Elegant Ride</h3>
+            <p class="car-desc">Arrive in sophistication with this stunning classic car.</p>
+            <div class="car-features">
+              <span>Sophisticated</span>
+              <span>Premium</span>
+              <span>Luxury</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 6 -->
+        <div class="car-card">
+          <div class="car-image">
+            <img src="images/mini_cooper.png" alt="Sporty Mini" />
+          </div>
+          <div class="car-details">
+            <h3 class="car-title">Sporty Mini</h3>
+            <p class="car-desc">A fun and sporty option for a unique wedding entrance or exit.</p>
+            <div class="car-features">
+              <span>Sporty</span>
+              <span>Fun</span>
+              <span>Iconic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 7 -->
+        <div class="car-card">
+          <div class="car-image">
+            <img src="images/rolls_royce.png" alt="Royal Rolls" />
+          </div>
+          <div class="car-details">
+            <h3 class="car-title">Royal Rolls</h3>
+            <p class="car-desc">The ultimate in luxury and prestige. Make a statement on your wedding day.</p>
+            <div class="car-features">
+              <span>Royal</span>
+              <span>Prestige</span>
+              <span>Grand</span>
+            </div>
           </div>
         </div>
       </div>
@@ -107,6 +170,8 @@
   </section>
 
   <!-- Booking Section -->
+  <!-- Booking Section (Disabled) -->
+  <!--
   <section id="booking" class="section-padding">
     <div class="container">
       <h2 class="section-title">Book Your Ride</h2>
@@ -165,13 +230,14 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- About Section -->
   <section id="about" class="section-padding">
     <div class="container">
       <div class="about-content">
         <div class="about-image">
-          <img src="images/hero.png" alt="About Mini Car Rental" />
+          <img src="images/Screenshot 2025-12-09 154706.png" alt="About Mini Car Rental" />
         </div>
         <div class="about-text">
           <h2 class="section-title" style="text-align: left; margin-bottom: 30px">Our Story</h2>
@@ -255,12 +321,13 @@
     });
 
     // Select Car from Gallery
-    function selectCar(carName) {
-      document.getElementById("car-select").value = carName;
-      document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
-    }
+    // function selectCar(carName) {
+    //   document.getElementById("car-select").value = carName;
+    //   document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+    // }
 
     // Handle Form Submission (Formspree)
+    /*
     document.getElementById("bookingForm").addEventListener("submit", function (e) {
       e.preventDefault();
       const form = this;
@@ -289,6 +356,7 @@
           submitBtn.disabled = false;
         });
     });
+    */
   </script>
 </body>
 
