@@ -453,14 +453,40 @@ textarea {
 .map-container:hover iframe {
     filter: invert(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
-
-/* Footer */
 footer {
     background-color: #111;
     color: #666;
     text-align: center;
     padding: 30px 0;
     font-size: 0.9rem;
+}
+
+/* Video Section Styles */
+#video {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 50px 0; /* Padding for spacing */
+  text-align: center; /* Center align text */
+}
+
+.video-container {
+  max-width: 800px; /* Limit the width of the video */
+  margin: 0 auto; /* Center the video container */
+  border: 2px solid #ddd; /* Light border around the video */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure corners are rounded */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.section-title {
+  font-size: 2.5rem; /* Larger title font size */
+  margin-bottom: 20px; /* Space below the title */
+  color: #333; /* Darker text color */
+}
+
+.section-subtitle {
+  font-size: 1.2rem; /* Subtitle font size */
+  margin-bottom: 30px; /* Space below the subtitle */
+  color: #666; /* Lighter text color */
 }
 
 /* Responsive */
