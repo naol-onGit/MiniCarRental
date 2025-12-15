@@ -317,6 +317,14 @@ nav {
     transform: scale(1.05);
 }
 
+/* Helper for images that shouldn't be cropped */
+/* Helper for images that shouldn't be cropped */
+.car-image img.img-contain {
+    object-fit: contain;
+    background-color: var(--white);
+    /* Fill empty space with something nice */
+}
+
 .car-details {
     padding: 25px;
     text-align: center;
