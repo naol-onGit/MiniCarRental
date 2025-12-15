@@ -555,46 +555,74 @@ footer {
 }
 
 /* Video Section Styles */
+/* Video Section Styles */
 #video {
-    background-color: #f9f9f9;
-    /* Light background for contrast */
-    padding: 50px 0;
-    /* Padding for spacing */
+    background-color: var(--accent-bg);
+    /* Cream accent background */
+    padding: 80px 0;
     text-align: center;
-    /* Center align text */
+    position: relative;
 }
 
 .video-container {
-    max-width: 800px;
-    /* Limit the width of the video */
+    max-width: 900px;
     margin: 0 auto;
-    /* Center the video container */
-    border: 2px solid #ddd;
-    /* Light border around the video */
-    border-radius: 10px;
-    /* Rounded corners */
-    overflow: hidden;
-    /* Ensure corners are rounded */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+    background: var(--white);
+    padding: 15px;
+    /* Creates a white photo-frame border */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    /* Subtle gold border */
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    /* Premium soft shadow */
+    position: relative;
+}
+
+/* Decorative element behind video */
+.video-container::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 100px;
+    height: 100px;
+    border-top: 3px solid var(--primary-color);
+    border-right: 3px solid var(--primary-color);
+    pointer-events: none;
+}
+
+.video-container::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    width: 100px;
+    height: 100px;
+    border-bottom: 3px solid var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    pointer-events: none;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* Modern aspect ratio handling */
+    height: auto;
+    /* Allow auto height based on ratio */
+    border-radius: 2px;
 }
 
 .section-title {
     font-size: 2.5rem;
-    /* Larger title font size */
     margin-bottom: 20px;
-    /* Space below the title */
-    color: #333;
-    /* Darker text color */
+    color: var(--text-color);
 }
 
 .section-subtitle {
     font-size: 1.2rem;
-    /* Subtitle font size */
-    margin-bottom: 30px;
-    /* Space below the subtitle */
-    color: #666;
-    /* Lighter text color */
+    margin-bottom: 50px;
+    color: var(--light-text);
 }
 
 /* Responsive */
