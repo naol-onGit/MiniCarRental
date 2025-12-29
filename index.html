@@ -1,77 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Required</title>
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .notice-container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 500px;
-            border-top: 5px solid #dc3545; /* Red warning line */
-        }
-        h1 {
-            color: #dc3545;
-            margin-top: 0;
-            font-size: 24px;
-        }
-        p {
-            line-height: 1.6;
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-        .contact-btn {
-            display: inline-block;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .contact-btn:hover {
-            background-color: #555;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #888;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Car Rental | Elegant Wedding Transport</title>
+    <meta
+      name="description"
+      content="Premium wedding car rental services. Arrive in style with our vintage and luxury fleet."
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <div class="notice-container">
-        <h1>Website Suspended</h1>
-        
-        <p>
-            This website has been temporarily deactivated pending final payment to the web developer.
-        </p>
-        <p>
-            Access will be restored immediately upon settlement of the outstanding invoice.
-        </p>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">
+            <img
+              src="images/company_logo_hero.png"
+              alt="Mini Car Rental Logo"
+              class="nav-logo-img"
+            />
+            <span>Mini Car Rental</span>
+          </a>
+          <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#gallery">Our Fleet</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-        <a href="mailto:naolynwa98@gmail.com" class="contact-btn">Contact Developer for Payment</a>
-        
-        <div class="footer">
-            &copy; Web Development Services
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container hero-wrapper">
+        <div class="hero-text">
+          <h1>Arrive in Timeless Elegance</h1>
+          <p>
+            Make your special day unforgettable with our exquisite fleet of
+            vintage and luxury wedding cars.
+          </p>
+          <a href="#gallery" class="btn">View Our Fleet</a>
         </div>
-    </div>
+        <div class="hero-image-container">
+          <img
+            src="images/company_logo_hero.png"
+            alt="Mini Wedding Car Rent Logo"
+            class="hero-logo-large"
+          />
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Our Exquisite Fleet</h2>
+        <p class="section-subtitle">
+          Choose the perfect ride for your perfect day.
+        </p>
+
+        <div class="cars-grid">
+          <!-- Car 1 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/photo_2025-12-09_15-36-37.jpg"
+                alt="Classic Mini Cooper"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Chrysler</h3>
+              <p class="car-desc">
+                Charming, iconic, and full of character. Perfect for a fun and
+                stylish getaway car.
+              </p>
+              <div class="car-features">
+                <span> Limousine</span>
+                <span> Sound System</span>
+                <span> Ribbons</span>
+              </div>
+              <!-- <button class="btn" onclick="selectCar('Classic Mini Cooper')">Select This Car</button> -->
+            </div>
+          </div>
+
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/-5908948004079602456_121.jpg"
+                alt="Royal Rolls"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Mercedes S-Class</h3>
+              <p class="car-desc">
+                The ultimate in luxury and prestige. Make a statement on your
+                wedding day.
+              </p>
+              <div class="car-features">
+                <span>Unique</span>
+                <span>Prestige</span>
+                <span>Grand</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 3 placeholder -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/photo_2025-12-09_15-37-22.jpg"
+                alt="Classic Beauty"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Range Rover</h3>
+              <p class="car-desc">
+                A timeless choice for your special occasion, offering elegance
+                and grace.
+              </p>
+              <div class="car-features">
+                <span>Classic</span>
+                <span>Elegant</span>
+                <span>Style</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 4 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/-5893299707348454282_120.jpg"
+                alt="Vintage Comfort"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Mercedes Smiling</h3>
+              <p class="car-desc">
+                Experience the comfort of a bygone era with this beautifully
+                preserved vehicle.
+              </p>
+              <div class="car-features">
+                <span>Mercedes</span>
+                <span>Cozy</span>
+                <span>Unique</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 5 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/photo_2025-12-09_15-37-28.jpg"
+                alt="Elegant Ride"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Dodge Limousine</h3>
+              <p class="car-desc">
+                Arrive in sophistication with this stunning classic car.
+              </p>
+              <div class="car-features">
+                <span>Sophisticated</span>
+                <span>Premium</span>
+                <span>Luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 6 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img src="images/1765787026943(1).jpg" alt="Sporty Mini" />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Chrysler</h3>
+              <p class="car-desc">
+                A majestic and presidential option for a unique wedding entrance
+                or exit.
+              </p>
+              <div class="car-features">
+                <span>VIP</span>
+                <span>Luxurious</span>
+                <span>Iconic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car 8 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/IMG_20190501_190033-1067x800.jpg"
+                alt="Antique"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Antique</h3>
+              <p class="car-desc">
+                The ultimate in Vintage and prestige. Make an oldies statement
+                on your wedding day.
+              </p>
+              <div class="car-features">
+                <span>Vintage</span>
+                <span>Prestige</span>
+                <span>Grand</span>
+              </div>
+            </div>
+          </div>
+          <!--Car -11-->
+          <!-- Car 8 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img src="images/IMG_20190501_190823.jpg" alt="HammerLimo" />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Hammer Limousine</h3>
+              <p class="car-desc">
+                The ultimate luxurious and prestige. Make an outrageous
+                statement on your wedding day.
+              </p>
+              <div class="car-features">
+                <span>Long Base</span>
+                <span>Luxurious</span>
+                <span>Limousine</span>
+              </div>
+            </div>
+          </div>
+          <!--Car -10  -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/c3e95facb5cfa3138e5040f3b6576b45.jpg"
+                alt="Royal Rolls"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Land Crusier V8</h3>
+              <p class="car-desc">
+                The ultimate in luxury and prestige. Make a statement on your
+                wedding day.
+              </p>
+              <div class="car-features">
+                <span>Presidential</span>
+                <span>Prestige</span>
+                <span>Grand</span>
+              </div>
+            </div>
+          </div>
+          <!-- Car 9 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img src="images/1765787030033.jpg" alt="Vintage Rolls Royce" />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Corolla</h3>
+              <p class="car-desc">
+                Affoardable motorcade option for the groom & bride.
+              </p>
+              <div class="car-features">
+                <span> 4 Seats</span>
+                <span> Affoardable</span>
+                <span> Classic</span>
+              </div>
+              <!-- <button class="btn" onclick="selectCar('Vintage Rolls Royce')">Select This Car</button> -->
+            </div>
+          </div>
+
+          <!-- New Car: Mercedes Black -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/mercedes_black.jpg"
+                alt="Mercedes E-Class Black"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">E-Class Kompressor</h3>
+              <p class="car-desc">
+                Elegant black sedan styled with flowers, perfect for a classic
+                and luxurious entrance.
+              </p>
+              <div class="car-features">
+                <span>Luxury</span>
+                <span>Classic</span>
+                <span>Mercedes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Car: Mercedes Fleet -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/mercedes_fleet.jpg"
+                alt="Mercedes W210 Fleet"
+                style="object-position: left 40%"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Mercedes Smiling</h3>
+              <p class="car-desc">
+                A stunning motorcade of Mercedes W210s, led by a pristine white
+                classic. perfect for grand entrances.
+              </p>
+              <div class="car-features">
+                <span>Fleet</span>
+                <span>Classic</span>
+                <span>Elegant</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Car: Hummer H2 -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/white_hummer.jpg"
+                alt="Hummer H2"
+                style="object-position: 80% center"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Hummer</h3>
+              <p class="car-desc">
+                Make a bold statement with this luxurious White Hummer H2.
+                Spacious, modern, and undeniably impressive.
+              </p>
+              <div class="car-features">
+                <span>Modern</span>
+                <span>Spacious</span>
+                <span>Bold</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Car: Jeep Wrangler -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/jeep_wrangler_black.jpg"
+                alt="Jeep Wrangler Black"
+                style="object-position: 75% center"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Jeep</h3>
+              <p class="car-desc">
+                Open-air freedom meets wedding elegance. A unique choice for
+                couples who love adventure and style.
+              </p>
+              <div class="car-features">
+                <span>Convertible</span>
+                <span>Adventure</span>
+                <span>Unique</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- New Car: Mercedes Black Fleet -->
+          <div class="car-card">
+            <div class="car-image">
+              <img
+                src="images/mercedes_black_fleet.jpg"
+                alt="Mercedes Black Fleet"
+                style="object-position: center 20%"
+              />
+            </div>
+            <div class="car-details">
+              <h3 class="car-title">Mercedes Kompressor E-Class</h3>
+              <p class="car-desc">
+                A synchronized fleet of elegant black Mercedes sedans to ensure
+                your entire party arrives in style.
+              </p>
+              <div class="car-features">
+                <span>Uniform</span>
+                <span>Presedential</span>
+                <span>Coordinated</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Watch Our Cars in Action</h2>
+        <p class="section-subtitle">
+          Experience the elegance and luxury of our fleet through video.
+        </p>
+        <div class="video-container">
+          <iframe
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/Bpx1SugWE7M?autoplay=1&loop=1&playlist=Bpx1SugWE7M"
+            title="Mini Car Rental Wedding Fleet"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="video" class="section-padding">
+      <div class="container">
+        <div class="video-container">
+          <iframe
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/x7Wr99fj2lc"
+            title="YouTube Shorts"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <!-- Booking Section (Disabled) -->
+    <!--
+  <section id="booking" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Book Your Ride</h2>
+      <p class="section-subtitle">Secure your dream car for your wedding date.</p>
+
+      <div class="booking-form-container">
+        <form id="bookingForm" action="https://formspree.io/f/xjknekdg" method="POST">
+          <input type="hidden" name="_subject" value="New Booking Request">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 8900" />
+            </div>
+            <div class="form-group">
+              <label for="date">Wedding Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="car-select">Select Car</label>
+            <select id="car-select" name="car" required>
+              <option value="" disabled selected>Choose a car...</option>
+              <option value="Vintage Rolls Royce">Vintage Rolls Royce</option>
+              <option value="Classic Mini Cooper">Classic Mini Cooper</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Requests</label>
+            <textarea id="message" name="message"
+              placeholder="Any specific requirements, route details, or questions?"></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn">Submit Booking Request</button>
+          </div>
+
+          <div id="successMessage" class="success-message">
+            <h3>Thank You!</h3>
+            <p>Your booking request has been received. We will contact you shortly to confirm availability.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  -->
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="images/Screenshot 2025-12-09 154706.png"
+              alt="About Mini Car Rental"
+            />
+          </div>
+          <div class="about-text">
+            <h2
+              class="section-title"
+              style="text-align: left; margin-bottom: 30px"
+            >
+              Our Story
+            </h2>
+            <div
+              style="
+                width: 60px;
+                height: 3px;
+                background-color: var(--primary-color);
+                margin-bottom: 30px;
+              "
+            ></div>
+            <p>
+              At Mini Car Rental, we believe that the journey is just as
+              important as the destination. Founded with a passion for classic
+              automotive design and a love for celebrations, we have been
+              serving couples for over a decade.
+            </p>
+            <p>
+              Our fleet is meticulously maintained to ensure not only a stunning
+              appearance but also reliability and comfort. We understand the
+              importance of your wedding day, and our professional chauffeurs
+              are dedicated to providing a seamless, punctual, and luxurious
+              experience.
+            </p>
+            <p>
+              Whether you prefer the regal presence of a Rolls Royce or the
+              playful charm of a classic Mini, we have the perfect vehicle to
+              match your style and make your entrance unforgettable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">
+          We'd love to hear from you. Get in touch to discuss your requirements.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h3>Visit Us</h3>
+                <p>
+                  22 Tigat Building, Addis Ababa,<br />
+                  Ethiopia
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h3>Call Us</h3>
+                <p>+251 911713271<br />Mon - Sat: 7am - 6pm</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h3>Email Us</h3>
+                <p>Skwmini@gmail.com</p>
+              </div>
+            </div>
+            <!--
+          <div class="social-links">
+            <a href="#" class="social-link">FB</a>
+            <a href="#" class="social-link">IG</a>
+            <a href="#" class="social-link">TW</a>
+            <a href="#" class="social-link">PI</a>
+          </div>
+          --></div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5347016832143!2d38.7800656737007!3d9.014889891045847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85a2696156e1%3A0x673a0abbcb9c8347!2zVGlnYXQgQnVpbGRpbmcgfCBIYXdhaHVsZXQgfCDhibXhjIvhibUg4YiF4YqV4Yy7IHwg4YiD4Yur4YiB4YiI4Ym1!5e0!3m2!1sen!2set!4v1765480582392!5m2!1sen!2set"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Mini Car Rental. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Menu Toggle
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+
+      // Smooth Scroll for Navigation Links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) target.scrollIntoView({ behavior: "smooth" });
+          document.querySelector(".nav-links").classList.remove("active");
+        });
+      });
+
+      // Select Car from Gallery
+      // function selectCar(carName) {
+      //   document.getElementById("car-select").value = carName;
+      //   document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+      // }
+
+      // Handle Form Submission (Formspree)
+      /*
+  document.getElementById("bookingForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const form = this;
+    const submitBtn = form.querySelector("button[type='submit']");
+    const originalText = submitBtn.innerText;
+    submitBtn.innerText = "Sending...";
+    submitBtn.disabled = true;
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    })
+      .then(response => {
+        if (response.ok) {
+          form.reset();
+          document.getElementById("successMessage").style.display = "block";
+          setTimeout(() => { document.getElementById("successMessage").style.display = "none"; }, 5000);
+        } else {
+          alert("Oops! Something went wrong.");
+        }
+      })
+      .catch(error => alert("Network error!"))
+      .finally(() => {
+        submitBtn.innerText = originalText;
+        submitBtn.disabled = false;
+      });
+  });
+  */
+    </script>
+  </body>
 </html>
